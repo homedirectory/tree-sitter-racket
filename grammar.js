@@ -245,53 +245,21 @@ module.exports = grammar({
             repeat($._skip),
             $._datum))),
 
-    quote: $ =>
-      seq(
-        "'",
-        repeat($._skip),
-        $._datum),
+    quote: _ => "'",
 
-    quasiquote: $ =>
-      seq(
-        "`",
-        repeat($._skip),
-        $._datum),
+    quasiquote: _ => "`",
 
-    syntax: $ =>
-      seq(
-        "#'",
-        repeat($._skip),
-        $._datum),
+    syntax: _ => "#'",
 
-    quasisyntax: $ =>
-      seq(
-        "#`",
-        repeat($._skip),
-        $._datum),
+    quasisyntax: _ => "#`",
 
-    unquote: $ =>
-      seq(
-        ",",
-        repeat($._skip),
-        $._datum),
+    unquote: _ => ",",
 
-    unquote_splicing: $ =>
-      seq(
-        ",@",
-        repeat($._skip),
-        $._datum),
+    unquote_splicing: _ => ",@",
 
-    unsyntax: $ =>
-      seq(
-        "#,",
-        repeat($._skip),
-        $._datum),
+    unsyntax: _ => "#,",
 
-    unsyntax_splicing: $ =>
-      seq(
-        "#,@",
-        repeat($._skip),
-        $._datum),
+    unsyntax_splicing: _ => "#,@",
 
     extension: $ =>
       choice(

@@ -10,15 +10,13 @@ quote
 ---
 
 (program
-  (quote
-    (number))
-  (quasiquote
-    (list
-      (number)
-      (unquote
-        (number))))
-  (syntax (number))
-  (quasisyntax (number)))
+  (quote) (number)
+  (quasiquote) (list
+                 (number)
+                 (unquote)
+                 (number))
+  (syntax) (number)
+  (quasisyntax) (number))
 
 ===
 unquote
@@ -31,8 +29,7 @@ unquote
 
 ---
 (program
-  (unquote (number))
-  (unquote_splicing (number))
-  (unsyntax (number))
-  (unsyntax_splicing
-    (number)))
+  (unquote) (number)
+  (unquote_splicing) (number)
+  (unsyntax) (number)
+  (unsyntax_splicing) (number))
