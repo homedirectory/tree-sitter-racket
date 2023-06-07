@@ -7482,37 +7482,197 @@
         }
       ]
     },
-    "quote": {
+    "quote_tok": {
       "type": "STRING",
       "value": "'"
     },
-    "quasiquote": {
+    "quote": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "quote_tok"
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_skip"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_datum"
+        }
+      ]
+    },
+    "quasiquote_tok": {
       "type": "STRING",
       "value": "`"
     },
-    "syntax": {
+    "quasiquote": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "quasiquote_tok"
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_skip"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_datum"
+        }
+      ]
+    },
+    "syntax_tok": {
       "type": "STRING",
       "value": "#'"
     },
-    "quasisyntax": {
+    "syntax": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "syntax_tok"
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_skip"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_datum"
+        }
+      ]
+    },
+    "quasisyntax_tok": {
       "type": "STRING",
       "value": "#`"
     },
-    "unquote": {
+    "quasisyntax": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "quasisyntax_tok"
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_skip"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_datum"
+        }
+      ]
+    },
+    "unquote_tok": {
       "type": "STRING",
       "value": ","
     },
-    "unquote_splicing": {
+    "unquote": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "unquote_tok"
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_skip"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_datum"
+        }
+      ]
+    },
+    "unquote_splicing_tok": {
       "type": "STRING",
       "value": ",@"
     },
-    "unsyntax": {
+    "unquote_splicing": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "unquote_splicing_tok"
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_skip"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_datum"
+        }
+      ]
+    },
+    "unsyntax_tok": {
       "type": "STRING",
       "value": "#,"
     },
-    "unsyntax_splicing": {
+    "unsyntax": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "unsyntax_tok"
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_skip"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_datum"
+        }
+      ]
+    },
+    "unsyntax_splicing_tok": {
       "type": "STRING",
       "value": "#,@"
+    },
+    "unsyntax_splicing": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "unsyntax_splicing_tok"
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_skip"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_datum"
+        }
+      ]
     },
     "extension": {
       "type": "CHOICE",

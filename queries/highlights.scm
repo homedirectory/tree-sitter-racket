@@ -14,11 +14,12 @@
 (character) @constant.builtin
 (boolean) @constant.builtin
 (keyword) @constant
-((quote) (symbol)) @constant
-((quote)
-    (list
-     .
-     (symbol)* @variable))
+(quote . (symbol)) @constant
+(quote
+ .
+ (list
+  .
+  (symbol)* @variable))
 
 (extension) @keyword
 (lang_name) @variable.builtin
