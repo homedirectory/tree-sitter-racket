@@ -10,14 +10,14 @@ quote
 ---
 
 (program
-  (quote (quote_tok) (number))
-  (quasiquote
-    (quasiquote_tok)
+  (quoted (quote) (number))
+  (quoted
+    (quasiquote)
     (list
       (number)
-      (unquote (unquote_tok) (number))))
-  (syntax (syntax_tok) (number))
-  (quasisyntax (quasisyntax_tok) (number)))
+      (quoted (unquote) (number))))
+  (quoted (syntax) (number))
+  (quoted (quasisyntax) (number)))
 
 ===
 unquote
@@ -30,7 +30,7 @@ unquote
 
 ---
 (program
-  (unquote (unquote_tok) (number))
-  (unquote_splicing (unquote_splicing_tok) (number))
-  (unsyntax (unsyntax_tok) (number))
-  (unsyntax_splicing (unsyntax_splicing_tok) (number)))
+  (quoted (unquote) (number))
+  (quoted (unquote_splicing) (number))
+  (quoted (unsyntax) (number))
+  (quoted (unsyntax_splicing) (number)))

@@ -14,8 +14,18 @@
 (character) @constant.builtin
 (boolean) @constant.builtin
 (keyword) @constant
-(quote . (symbol)) @constant
-(quote
+[
+ (quote)
+ (quasiquote)
+ (syntax)
+ (quasisyntax)
+ (unquote)
+ (unquote_splicing)
+ (unsyntax)
+ (unsyntax_splicing)
+] @quote
+(quoted (_) . (symbol)) @constant
+(quoted (_)
  .
  (list
   .

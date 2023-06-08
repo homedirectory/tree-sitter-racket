@@ -111,14 +111,7 @@ module.exports = grammar({
         $.structure,
         $.hash,
 
-        $.quote,
-        $.quasiquote,
-        $.syntax,
-        $.quasisyntax,
-        $.unquote,
-        $.unquote_splicing,
-        $.unsyntax,
-        $.unsyntax_splicing,
+        $.quoted,
 
         $.list,
         $.vector),
@@ -245,69 +238,29 @@ module.exports = grammar({
             repeat($._skip),
             $._datum))),
 
-    quote_tok: _ => "'",
+    quote: _ => "'",
+    quasiquote: _ => "`",
+    syntax: _ => "#'",
+    quasisyntax: _ => "#`",
+    unquote: _ => ",",
+    unquote_splicing: _ => ",@",
+    unsyntax: _ => "#,",
+    unsyntax_splicing: _ => "#,@",
 
-    quote: $ =>
+    quoted: $ =>
       seq(
-        $.quote_tok,
+        choice(
+          $.quote,
+          $.quasiquote,
+          $.syntax,
+          $.quasisyntax,
+          $.unquote,
+          $.unquote_splicing,
+          $.unsyntax,
+          $.unsyntax_splicing),
         repeat($._skip),
-        $._datum),
-
-    quasiquote_tok: _ => "`",
-
-    quasiquote: $ =>
-      seq(
-        $.quasiquote_tok,
-        repeat($._skip),
-        $._datum),
-
-    syntax_tok: _ => "#'",
-
-    syntax: $ =>
-      seq(
-        $.syntax_tok,
-        repeat($._skip),
-        $._datum),
-
-    quasisyntax_tok: _ => "#`",
-
-    quasisyntax: $ =>
-      seq(
-        $.quasisyntax_tok,
-        repeat($._skip),
-        $._datum),
-
-    unquote_tok: _ => ",",
-
-    unquote: $ =>
-      seq(
-        $.unquote_tok,
-        repeat($._skip),
-        $._datum),
-
-    unquote_splicing_tok: _ => ",@",
-
-    unquote_splicing: $ =>
-      seq(
-        $.unquote_splicing_tok,
-        repeat($._skip),
-        $._datum),
-
-    unsyntax_tok: _ => "#,",
-
-    unsyntax: $ =>
-      seq(
-        $.unsyntax_tok,
-        repeat($._skip),
-        $._datum),
-
-    unsyntax_splicing_tok: _ => "#,@",
-
-    unsyntax_splicing: $ =>
-      seq(
-        $.unsyntax_splicing_tok,
-        repeat($._skip),
-        $._datum),
+        $._datum
+      ),
 
     extension: $ =>
       choice(
