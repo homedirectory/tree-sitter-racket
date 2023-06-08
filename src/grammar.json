@@ -7043,6 +7043,52 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "CHOICE",
+                  "members": [
+                    {
+                      "type": "PATTERN",
+                      "value": "[+-]"
+                    },
+                    {
+                      "type": "BLANK"
+                    }
+                  ]
+                },
+                {
+                  "type": "CHOICE",
+                  "members": [
+                    {
+                      "type": "STRING",
+                      "value": "inf.0"
+                    },
+                    {
+                      "type": "STRING",
+                      "value": "inf.f"
+                    },
+                    {
+                      "type": "STRING",
+                      "value": "inf.t"
+                    },
+                    {
+                      "type": "STRING",
+                      "value": "nan.0"
+                    },
+                    {
+                      "type": "STRING",
+                      "value": "nan.f"
+                    },
+                    {
+                      "type": "STRING",
+                      "value": "nan.t"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
