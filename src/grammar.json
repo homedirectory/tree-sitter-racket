@@ -508,16 +508,8 @@
               "type": "SEQ",
               "members": [
                 {
-                  "type": "CHOICE",
-                  "members": [
-                    {
-                      "type": "PATTERN",
-                      "value": "#[bB]"
-                    },
-                    {
-                      "type": "BLANK"
-                    }
-                  ]
+                  "type": "PATTERN",
+                  "value": "#[bB]"
                 },
                 {
                   "type": "CHOICE",
@@ -753,16 +745,8 @@
               "type": "SEQ",
               "members": [
                 {
-                  "type": "CHOICE",
-                  "members": [
-                    {
-                      "type": "PATTERN",
-                      "value": "#[oO]"
-                    },
-                    {
-                      "type": "BLANK"
-                    }
-                  ]
+                  "type": "PATTERN",
+                  "value": "#[oO]"
                 },
                 {
                   "type": "CHOICE",
@@ -1001,16 +985,8 @@
                   "type": "CHOICE",
                   "members": [
                     {
-                      "type": "CHOICE",
-                      "members": [
-                        {
-                          "type": "PATTERN",
-                          "value": "#[dD]"
-                        },
-                        {
-                          "type": "BLANK"
-                        }
-                      ]
+                      "type": "PATTERN",
+                      "value": "#[dD]"
                     },
                     {
                       "type": "BLANK"
@@ -1251,16 +1227,8 @@
               "type": "SEQ",
               "members": [
                 {
-                  "type": "CHOICE",
-                  "members": [
-                    {
-                      "type": "PATTERN",
-                      "value": "#[xX]"
-                    },
-                    {
-                      "type": "BLANK"
-                    }
-                  ]
+                  "type": "PATTERN",
+                  "value": "#[xX]"
                 },
                 {
                   "type": "CHOICE",
@@ -1514,16 +1482,8 @@
                           ]
                         },
                         {
-                          "type": "CHOICE",
-                          "members": [
-                            {
-                              "type": "PATTERN",
-                              "value": "#[bB]"
-                            },
-                            {
-                              "type": "BLANK"
-                            }
-                          ]
+                          "type": "PATTERN",
+                          "value": "#[bB]"
                         }
                       ]
                     },
@@ -1531,16 +1491,8 @@
                       "type": "SEQ",
                       "members": [
                         {
-                          "type": "CHOICE",
-                          "members": [
-                            {
-                              "type": "PATTERN",
-                              "value": "#[bB]"
-                            },
-                            {
-                              "type": "BLANK"
-                            }
-                          ]
+                          "type": "PATTERN",
+                          "value": "#[bB]"
                         },
                         {
                           "type": "CHOICE",
@@ -2898,16 +2850,8 @@
                           ]
                         },
                         {
-                          "type": "CHOICE",
-                          "members": [
-                            {
-                              "type": "PATTERN",
-                              "value": "#[oO]"
-                            },
-                            {
-                              "type": "BLANK"
-                            }
-                          ]
+                          "type": "PATTERN",
+                          "value": "#[oO]"
                         }
                       ]
                     },
@@ -2915,16 +2859,8 @@
                       "type": "SEQ",
                       "members": [
                         {
-                          "type": "CHOICE",
-                          "members": [
-                            {
-                              "type": "PATTERN",
-                              "value": "#[oO]"
-                            },
-                            {
-                              "type": "BLANK"
-                            }
-                          ]
+                          "type": "PATTERN",
+                          "value": "#[oO]"
                         },
                         {
                           "type": "CHOICE",
@@ -4285,16 +4221,8 @@
                           "type": "CHOICE",
                           "members": [
                             {
-                              "type": "CHOICE",
-                              "members": [
-                                {
-                                  "type": "PATTERN",
-                                  "value": "#[dD]"
-                                },
-                                {
-                                  "type": "BLANK"
-                                }
-                              ]
+                              "type": "PATTERN",
+                              "value": "#[dD]"
                             },
                             {
                               "type": "BLANK"
@@ -4310,16 +4238,8 @@
                           "type": "CHOICE",
                           "members": [
                             {
-                              "type": "CHOICE",
-                              "members": [
-                                {
-                                  "type": "PATTERN",
-                                  "value": "#[dD]"
-                                },
-                                {
-                                  "type": "BLANK"
-                                }
-                              ]
+                              "type": "PATTERN",
+                              "value": "#[dD]"
                             },
                             {
                               "type": "BLANK"
@@ -5682,16 +5602,8 @@
                           ]
                         },
                         {
-                          "type": "CHOICE",
-                          "members": [
-                            {
-                              "type": "PATTERN",
-                              "value": "#[xX]"
-                            },
-                            {
-                              "type": "BLANK"
-                            }
-                          ]
+                          "type": "PATTERN",
+                          "value": "#[xX]"
                         }
                       ]
                     },
@@ -5699,16 +5611,8 @@
                       "type": "SEQ",
                       "members": [
                         {
-                          "type": "CHOICE",
-                          "members": [
-                            {
-                              "type": "PATTERN",
-                              "value": "#[xX]"
-                            },
-                            {
-                              "type": "BLANK"
-                            }
-                          ]
+                          "type": "PATTERN",
+                          "value": "#[xX]"
                         },
                         {
                           "type": "CHOICE",
@@ -7060,33 +6964,8 @@
                   ]
                 },
                 {
-                  "type": "CHOICE",
-                  "members": [
-                    {
-                      "type": "STRING",
-                      "value": "inf.0"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "inf.f"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "inf.t"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "nan.0"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "nan.f"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "nan.t"
-                    }
-                  ]
+                  "type": "PATTERN",
+                  "value": "(inf|nan)\\.[0ft]"
                 }
               ]
             }
