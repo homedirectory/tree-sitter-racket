@@ -64,25 +64,25 @@
 
 ;; quoted symbol ;;
 
-;(quoted
-;  [
-;   (quote)
-;   (quasiquote)
-;   (syntax)
-;   (quasisyntax)
-;   ]
-;  . (symbol) @quoted_symbol)
+(quoted
+  [
+   (quote)
+   (quasiquote)
+   (syntax)
+   (quasisyntax)
+   ]
+  . (symbol) @quoted_symbol)
 
 ;; quoted list ;;
 
-;(quoted
-;  [
-;   (quote)
-;   (quasiquote)
-;   (syntax)
-;   (quasisyntax)
-;   ]
-;  . (list . (symbol)* @quoted_symbol))
+(quoted
+  [
+   (quote)
+   (quasiquote)
+   (syntax)
+   (quasisyntax)
+   ]
+  . (list . (symbol)* @quoted_symbol))
 
 ;;------------------------------------------------------------------;;
 ;;                        Builtin highlights                        ;;
