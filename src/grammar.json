@@ -6952,22 +6952,26 @@
               "type": "SEQ",
               "members": [
                 {
+                  "type": "PATTERN",
+                  "value": "[+-]([Ii][Nn][Ff]|[Nn][Aa][Nn])\\.[0Ff]"
+                },
+                {
                   "type": "CHOICE",
                   "members": [
                     {
                       "type": "PATTERN",
-                      "value": "[+-]"
+                      "value": "[Ii]"
                     },
                     {
                       "type": "BLANK"
                     }
                   ]
-                },
-                {
-                  "type": "PATTERN",
-                  "value": "(inf|nan)\\.[0ft]"
                 }
               ]
+            },
+            {
+              "type": "PATTERN",
+              "value": "[+-]([Ii][Nn][Ff]|[Nn][Aa][Nn])\\.[Tt]"
             }
           ]
         }

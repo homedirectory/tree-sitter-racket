@@ -101,16 +101,24 @@ inexact-simple
 inf & nan
 ===
 
-inf.0
-inf.f
-inf.t
-nan.0
-nan.f
-nan.t
++inf.0
+-inf.f
++inf.t
++InF.0i
+-inF.FI
+-nan.0
++nan.f
+-nan.t
++NAN.fi
+-nAn.0I
 
 ---
 
 (program
+  (number)
+  (number)
+  (number)
+  (number)
   (number)
   (number)
   (number)
